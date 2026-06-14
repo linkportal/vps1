@@ -1,5 +1,3 @@
-# em 14.06.2026 copiei de https://github.com/HowToLearnHacking/uploads/blob/main/ubuntu_vps.txt
-#---1
 # Use a base image that supports systemd, for example, Ubuntu
 FROM ubuntu:20.04
 
@@ -14,5 +12,5 @@ RUN echo 'root:root' | chpasswd
 EXPOSE 4200
 
 # Start shellinabox
-#---2
 CMD ["/usr/bin/shellinaboxd", "-t", "-s", "/:LOGIN"]
+

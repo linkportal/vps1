@@ -7,8 +7,7 @@ apt-get install -y shellinabox && \
 apt-get install -y systemd && \
 apt-get clean && \
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-RUN echo 'root:root' | nada1234
-# chpasswd
+RUN echo 'root:root' | chpasswd
 # Expose the web-based terminal port
 EXPOSE 4200
 
